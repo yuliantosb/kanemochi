@@ -1,0 +1,45 @@
+.img-logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+.input {
+  display: flex;
+  background-color: #fff;
+  padding: 5px 10px;
+  margin: 10px 0px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid var(--color-stroke);
+}
+
+.input > i {
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: var(--color-black);
+}
+
+.input > input {
+  width: 100%;
+  border: none;
+  font-size: 1.2em;
+  color: var(--color-black);
+}
+
+.input > input:focus {
+  outline: none;
+}
+
+.input-group > label {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 30px;
+  display: block;
+  color: var(--color-black);
+}

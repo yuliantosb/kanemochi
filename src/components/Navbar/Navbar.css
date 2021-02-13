@@ -1,0 +1,343 @@
+.kelola-navbar-sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.kelola-navbar {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid var(--color-stroke);
+  justify-content: flex-start;
+  width: var(--width-navbar);
+}
+
+.kelola-navbar .kelola-search {
+  display: flex;
+  border: 2px solid #f2f2f2;
+  padding: 5px 10px;
+  align-items: center;
+  border-radius: 5px;
+  width: 400px;
+  justify-content: space-between;
+}
+
+.kelola-navbar .kelola-search input::placeholder {
+  color: #e0e0e0;
+}
+
+.kelola-navbar .kelola-search > input {
+  border: 0px;
+  width: 100%;
+}
+
+.kelola-navbar .kelola-search > input:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.kelola-navbar .kelola-search > i {
+  color: var(--color-black);
+}
+
+.kelola-navbar .kelola-left-navbar {
+  display: flex;
+  align-items: flex-start;
+}
+
+.kelola-navbar .kelola-logo {
+  width: 230px;
+  padding: 0px 40px;
+}
+
+.kelola-navbar .kelola-right-navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.kelola-navbar .kelola-profile {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.kelola-flex {
+  display: flex;
+}
+
+.kelola-badge-wrapper {
+  position: relative;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.kelola-badge-wrapper i {
+  font-size: 2em;
+  color: var(--color-black);
+}
+
+.kelola-badge {
+  position: absolute;
+  background-color: #eb5757;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid#fff;
+  right: -5px;
+  top: -5px;
+}
+
+.kelola-badge span {
+  font-size: 0.7em;
+  color: #fff;
+}
+
+.kelola-profile-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.kelola-profile-name:hover > h4,
+.kelola-profile-wrapper img:hover {
+  color: var(--color-primary) !important;
+}
+
+.kelola-profile-name {
+  margin-right: 15px;
+}
+
+.kelola-profile-name h4 {
+  margin: 0px;
+  padding: 0px;
+  line-height: 10px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.kelola-profile-name span {
+  color: var(--color-secondary);
+}
+
+.kelola-search-wrapper {
+  position: relative;
+}
+
+.kelola-search-result-content {
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  border: 2px solid var(--color-stroke);
+  border-radius: 10px;
+  margin-top: 10px;
+  min-width: 400px;
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.kelola-search-result-content > ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  padding: 20px;
+}
+
+.kelola-search-result-content > ul:not(:last-child) {
+  border-bottom: 1px solid var(--color-stroke);
+}
+
+.kelola-search-result-content > ul > li {
+  color: var(--color-secondary);
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.kelola-search-result-content > ul > li:hover {
+  color: var(--color-black);
+}
+
+.kelola-search-result-content > ul > li.title {
+  color: var(--color-primary) !important;
+  font-weight: bold;
+}
+
+.kelola-dropdown {
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  min-width: 400px;
+  right: -40px;
+  border: 1px solid var(--color-stroke);
+  border-radius: 10px;
+  cursor: default;
+  margin-top: 10px;
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.kelola-dropdown-title {
+  color: var(--color-primary);
+  font-weight: bold;
+  margin: 20px 20px 0px 20px;
+}
+
+.kelola-dropdown-content-wrapper {
+  max-height: 300px;
+  padding: 0px 20px;
+  margin: 10px 0px;
+  overflow: hidden;
+  margin-right: 5px;
+}
+
+.kelola-dropdown-content-wrapper:hover {
+  overflow: auto;
+  margin-right: 0px;
+}
+
+.kelola-dropdown-content {
+  margin: 20px 0px;
+  display: flex;
+  cursor: pointer;
+}
+
+.kelola-dropdown-content img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.kelola-dropdown-wrapper {
+  margin-left: 15px;
+}
+
+.kelola-dropdown-wrapper div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.kelola-dropdown-title-left {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.kelola-dropdown-title-right {
+  color: var(--color-primary);
+}
+
+.kelola-dropdown-wrapper p {
+  color: var(--color-secondary);
+}
+
+.kelola-dropdown-wrapper p:hover {
+  color: var(--color-black);
+}
+
+.kelola-dropdown-action-button {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.kelola-bubble-dropdown {
+  position: absolute;
+  right: 0px;
+  top: 30px;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.kelola-dropdown-icon-wrapper {
+  width: 40px;
+}
+
+.kelola-dropdown-icon {
+  display: flex;
+  background-color: var(--color-active);
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.kelola-dropdown-icon > i {
+  font-size: 1.5em;
+  color: var(--color-primary);
+}
+
+.kelola-profile-toggle {
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  border: 1px solid var(--color-stroke);
+  border-radius: 10px;
+  cursor: default;
+  top: 50px;
+  right: 0;
+  width: 200px;
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.kelola-profile-toggle > ul {
+  list-style: none;
+  margin: 20px;
+  padding: 0px;
+}
+
+.kelola-profile-toggle > ul > li {
+  margin: 10px 0px;
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+.kelola-profile-toggle > ul > li:hover {
+  color: var(--color-primary);
+}
+
+.kelola-profile-toggle > ul > li > i {
+  margin-right: 10px;
+}
+
+.kelola-profile-toggle .kelola-divider {
+  border-bottom: 1px solid var(--color-stroke);
+  margin: 20px 0px;
+}
+
+.kelola-profile-toggle .kelola-language {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.kelola-profile-toggle .kelola-language > img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.kelola-bubble-dropdown-profile {
+  top: 40px !important;
+}
+
+.kelola-select {
+  display: flex;
+  align-items: center;
+}
+
+.kelola-select > img {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
+}

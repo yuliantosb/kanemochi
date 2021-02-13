@@ -1,0 +1,13 @@
+.kelola-footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 20px;
+  color: var(--color-secondary);
+  display: flex;
+  left: 25%;
+}
+
+.kelola-footer .kelola-heart {
+  color: #f687b3;
+  margin: 0px 5px;
+}

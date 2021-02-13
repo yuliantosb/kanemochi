@@ -1,0 +1,110 @@
+.kelola-sidebar-collapsed {
+  display: flex;
+}
+
+.kelola-sidebar-collapsed-content {
+  padding: 30px 15px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-height: var(--height-content);
+  overflow: hidden;
+  transition: all 100ms ease-in-out;
+  margin-left: -300px;
+  z-index: 0;
+}
+
+.kelola-sidebar-collapsed-content:hover {
+  overflow: auto;
+}
+
+.kelola-sidebar-collapsed-content .kelola-menu-title {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.kelola-sidebar-collapsed-content .kelola-menu-title::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  margin-right: 10px;
+  content: "";
+  display: inline-block;
+}
+
+.kelola-sidebar-collapsed-content > ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.kelola-sidebar-collapsed-content > ul > li {
+  margin: 20px 0px;
+}
+
+.kelola-sidebar-collapsed-content > ul > li > span {
+  color: var(--color-secondary);
+  font-weight: bold;
+  transition: color 0.2s ease-in;
+}
+
+.kelola-sidebar-collapsed-content > ul > li,
+.kelola-menu-children > li {
+  cursor: pointer;
+}
+
+.kelola-sidebar-collapsed-content > ul > li:hover > span,
+.kelola-menu-children > li:hover > span {
+  color: var(--color-primary);
+}
+
+.kelola-content {
+  background-color: var(--color-background);
+  width: 100%;
+  min-height: var(--height-content);
+  padding: 20px;
+  position: relative;
+}
+
+.kelola-menu-has-children::before {
+  font-family: "feather" !important;
+  content: "\e92e";
+  display: inline-block;
+  margin-right: 10px;
+  transition: all 100ms ease-in-out;
+  transform: rotate(-90deg);
+}
+
+.kelola-menu-has-children.kelola-menu-has-children-active::before {
+  transform: rotate(0deg);
+}
+
+.kelola-menu-children {
+  list-style: none;
+  padding: 0px;
+  opacity: 0;
+  transition: all 100ms ease-in-out;
+}
+
+.kelola-menu-children > li {
+  border-radius: 50px;
+  margin: 10px 0px;
+}
+
+.kelola-menu-children > li.kelola-sidebar-collapsed-active {
+  background-color: var(--color-active);
+}
+
+.kelola-menu-children > li.kelola-sidebar-collapsed-active > span {
+  color: var(--color-primary) !important;
+}
+
+.kelola-menu-children > li > span {
+  color: var(--color-secondary);
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0px 10px 35px;
+}

@@ -1,0 +1,38 @@
+.full-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-content {
+  flex: 1;
+  background-color: var(--color-active);
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
+  padding-bottom: 30px;
+}
+
+.right-content {
+  flex: 1;
+  padding: 0px 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: var(--width-half);
+}
+
+.content > h2 {
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+.img-carousel {
+  width: 400px;
+  margin: 40px 0px;
+}
+
+.img-carousel-thumbnail {
+  width: 60px;
+}

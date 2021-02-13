@@ -1,0 +1,25 @@
+.primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 30px;
+  border: 2px solid var(--color-primary);
+  border-radius: 20px;
+}
+
+.secondary {
+  background-color: #fff;
+  color: var(--color-secondary);
+  font-weight: bold;
+  padding: 5px 30px;
+  border: 2px solid var(--color-secondary);
+  border-radius: 20px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn:active {
+  outline: none;
+}
